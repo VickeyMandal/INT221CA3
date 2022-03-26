@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 300px auto;
+    height: 100vh;
+}
+
+aside{
+    background: #f7f7f7;
+    padding: 10px;
+}
+
+section{
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile_template{
+    padding-left: 25px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile h3{
+     color: #232323;
+}
+
+.profile p{
+    color: #232323;
+}
+
+
+.nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 40px;
+    margin-top: 30px;
+    background-color: #f7f7f7;
+    height: 40px;
+}
+
+.nav a:not(:nth-child(5)){
+    margin-bottom: 20px;
+}
+
+.nav a h4{
+    color: #232323;
+}
+
+.fa-user-circle{
+    color: #ff643d;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.fa-cloud ,
+.fa-star,
+.fa-book,
+.fa-user-alt,
+.fa-home{
+    font-size: 25px;
+    margin-right: 5px;
+    width: 30px;
+}
+
+.fa-cloud {
+    color: #3ac7ff;
+    margin-right: 5px;
+}
+
+.fa-star{
+    color: #f5704f;
+}
+
+.fa-book{
+    color: #27ebe1;
+}
+
+.fa-user-alt{
+    color: #39e6b2;
+}
+
+.fa-home{
+    color: #9e2fdf;
+}
+
+.category_title{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #ff643d;
+}
+
+.todo_wrapper{
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+.todo_wrapper input{
+    margin-right: 10px;
+}
+
+.todo_wrapper p{
+    font-size: 18px;
+    color: #232323;
+}
+
+.todos{
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.todo input{
+    width: 100%;
+    font-size: medium;
+    background: #f1f1f1;
+    color: #232323;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.fa-plus{
+    color: #ff643d;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.fa-plus:hover{
+    opacity: .50;
+}
+
+.edit_modal_wrapper{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    min-width: 400px;
+    background: #232323;
+    border-left: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.edit_modal{
+    margin: 20px;
+}
+
+.description_block input{
+    width: 100%;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    padding: 20px 10px;
+}
+
+.button_block{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button_block a, .button_block input{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button_block input:nth-child(3){
+    background: rgb(141, 224, 141);
+    cursor: pointer;
+}
+
+.button_block a:nth-child(4){
+    background: rgb(255, 126, 126);
+}
+
+.created_date{
+    border-top: 1px solid gray;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.created_date p{
+    color: white;
+}
+
+#delete_button{
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
